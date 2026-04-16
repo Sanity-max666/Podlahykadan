@@ -1,0 +1,2308 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Podlahové centrum Kadaň | Koberce, vinyl, plovoucí podlahy</title>
+  <meta name="description"
+    content="Podlahové centrum Kadaň nabízí koberce, PVC, vinylové a plovoucí podlahy. Sklad 550 m², více než 1000 vzorků. Poradenství, zaměření a profesionální pokládka. Topolová 1817, Kadaň.">
+  <meta name="keywords"
+    content="koberce Kadaň, podlahy Kadaň, PVC podlahy, vinylové podlahy, plovoucí podlahy, pokládka koberců, podlahové centrum">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.podlahykadan.cz/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Podlahové centrum Kadaň">
+  <meta property="og:description"
+    content="Koberce, PVC, vinyl a plovoucí podlahy. Sklad 550 m², 1000+ vzorků. Poradenství, zaměření, pokládka.">
+  <meta property="og:url" content="https://www.podlahykadan.cz/">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Podlahové centrum Kadaň",
+    "description": "Koberce, PVC, vinylové a plovoucí podlahy. Poradenství, zaměření a pokládka.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Topolová 1817",
+      "addressLocality": "Kadaň",
+      "postalCode": "43201",
+      "addressCountry": "CZ"
+    },
+    "telephone": "+420728363267",
+    "email": "koberceb@seznam.cz",
+    "openingHours": ["Mo-Fr 09:00-12:30", "Mo-Fr 13:30-17:00", "Sa 09:00-12:00"],
+    "url": "https://www.podlahykadan.cz"
+  }
+  </script>
+
+  <style>
+    /* ===== CSS VARIABLES ===== */
+    :root {
+      --dark: #171310;
+      --dark-2: #211d19;
+      --cream: #f5f0e8;
+      --cream-2: #ede5d8;
+      --gold: #BF9B5C;
+      --gold-light: #D4B278;
+      --brown: #7a6045;
+      --text-dark: #2a221a;
+      --text-light: #f5f0e8;
+      --text-muted: #9a8878;
+    }
+
+    /* ===== RESET ===== */
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: var(--dark);
+      color: var(--text-dark);
+      overflow-x: hidden;
+    }
+
+    /* ===== NAVIGATION ===== */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      padding: 0 3.5rem;
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: background 0.4s, border-color 0.4s;
+    }
+
+    nav.scrolled {
+      background: rgba(23, 19, 16, 0.96);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(200, 148, 74, 0.18);
+    }
+
+    .nav-logo {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.15;
+      text-decoration: none;
+    }
+
+    .nav-logo-main {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: var(--text-light);
+      letter-spacing: 0.06em;
+    }
+
+    .nav-logo-sub {
+      font-size: 0.72rem;
+      font-weight: 400;
+      color: var(--gold);
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(245, 240, 232, 0.7);
+      text-decoration: none;
+      transition: color 0.3s;
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: var(--gold);
+      transition: width 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold);
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-phone {
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--gold);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      transition: opacity 0.3s;
+    }
+
+    .nav-phone:hover {
+      opacity: 0.75;
+    }
+
+    /* ===== HAMBURGER ===== */
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      width: 36px;
+      height: 36px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+      z-index: 1100;
+    }
+
+    .nav-hamburger span {
+      display: block;
+      width: 24px;
+      height: 1.5px;
+      background: var(--text-light);
+      transition: transform 0.35s ease, opacity 0.25s ease, width 0.3s ease;
+      transform-origin: center;
+    }
+
+    .nav-hamburger.open span:nth-child(1) {
+      transform: translateY(6.5px) rotate(45deg);
+    }
+
+    .nav-hamburger.open span:nth-child(2) {
+      opacity: 0;
+      width: 0;
+    }
+
+    .nav-hamburger.open span:nth-child(3) {
+      transform: translateY(-6.5px) rotate(-45deg);
+    }
+
+    /* ===== MOBILE MENU OVERLAY ===== */
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 999;
+      background: rgba(23, 19, 16, 0.98);
+      backdrop-filter: blur(20px);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2.5rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.35s ease;
+    }
+
+    .mobile-menu.open {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .mobile-menu a {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2rem, 8vw, 3rem);
+      font-weight: 400;
+      color: var(--text-light);
+      text-decoration: none;
+      letter-spacing: 0.04em;
+      position: relative;
+      transition: color 0.3s;
+    }
+
+    .mobile-menu a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: var(--gold);
+      transition: width 0.4s ease;
+    }
+
+    .mobile-menu a:hover {
+      color: var(--gold);
+    }
+
+    .mobile-menu a:hover::after {
+      width: 100%;
+    }
+
+    .mobile-menu-phone {
+      margin-top: 1rem;
+      font-size: 1rem;
+      font-weight: 400;
+      color: var(--gold) !important;
+      letter-spacing: 0.1em;
+    }
+
+    .mobile-menu-phone::after {
+      display: none !important;
+    }
+
+    /* ===== HERO ===== */
+    #hero {
+      position: relative;
+      height: 100vh;
+      min-height: 700px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+    }
+
+    .hero-slide {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center 40%;
+      opacity: 0;
+      transition: opacity 1.4s ease;
+    }
+
+    .hero-slide.active {
+      opacity: 1;
+      animation: heroZoom 9s ease-out forwards;
+    }
+
+    @keyframes heroZoom {
+      from {
+        transform: scale(1.07);
+      }
+
+      to {
+        transform: scale(1);
+      }
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(110deg,
+          rgba(23, 19, 16, 0.88) 0%,
+          rgba(23, 19, 16, 0.55) 55%,
+          rgba(23, 19, 16, 0.2) 100%);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 0 7rem;
+      max-width: 820px;
+    }
+
+    .hero-eyebrow {
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.38em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.6rem;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.3s forwards;
+    }
+
+    .hero-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(3.4rem, 6.5vw, 5.8rem);
+      font-weight: 300;
+      line-height: 1.06;
+      color: var(--text-light);
+      margin-bottom: 1.8rem;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.5s forwards;
+    }
+
+    .hero-title em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+
+    .hero-subtitle {
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.85;
+      color: rgba(245, 240, 232, 0.65);
+      max-width: 460px;
+      margin-bottom: 2.8rem;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.7s forwards;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.9s forwards;
+    }
+
+    .hero-cta-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+      padding: 1rem 2.5rem;
+      background: var(--gold);
+      border: 1px solid var(--gold);
+      color: var(--dark);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    .hero-cta-primary:hover {
+      background: var(--gold-light);
+      border-color: var(--gold-light);
+      transform: translateY(-2px);
+    }
+
+    .hero-cta-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+      padding: 1rem 2.5rem;
+      background: transparent;
+      border: 1px solid rgba(245, 240, 232, 0.35);
+      color: var(--text-light);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    .hero-cta-secondary:hover {
+      border-color: var(--text-light);
+      background: rgba(245, 240, 232, 0.07);
+    }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 2.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      animation: fadeUp 0.8s ease 1.3s forwards;
+    }
+
+    .hero-scroll-arrow {
+      width: 22px;
+      height: 22px;
+      border-right: 1.5px solid rgba(191, 155, 92, 0.7);
+      border-bottom: 1.5px solid rgba(191, 155, 92, 0.7);
+      transform: rotate(45deg);
+      animation: arrowBounce 1.8s ease-in-out infinite;
+    }
+
+    @keyframes arrowBounce {
+
+      0%,
+      100% {
+        opacity: 0.4;
+        transform: rotate(45deg) translateY(0);
+      }
+
+      50% {
+        opacity: 1;
+        transform: rotate(45deg) translateY(5px);
+      }
+    }
+
+    /* ===== MOTTO ===== */
+    #motto {
+      background: var(--dark-2);
+      padding: 8rem 3rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #motto::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--gold), transparent);
+    }
+
+    #motto::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--gold), transparent);
+    }
+
+    .motto-bg-word {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: 'DM Serif Display', serif;
+      font-size: 22vw;
+      font-weight: 600;
+      color: rgba(200, 148, 74, 0.04);
+      white-space: nowrap;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .motto-eyebrow {
+      font-size: 0.62rem;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 2rem;
+      position: relative;
+    }
+
+    .motto-quote {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(1.9rem, 3.8vw, 3.4rem);
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.4;
+      color: var(--text-light);
+      max-width: 820px;
+      margin: 0 auto 1rem;
+      position: relative;
+    }
+
+    .motto-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2.5rem;
+      position: relative;
+    }
+
+    .motto-divider-line {
+      width: 60px;
+      height: 1px;
+      background: rgba(200, 148, 74, 0.3);
+    }
+
+    .motto-divider-diamond {
+      width: 6px;
+      height: 6px;
+      background: var(--gold);
+      transform: rotate(45deg);
+    }
+
+    /* ===== STATS ===== */
+    #stats {
+      background: var(--gold);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .stat-item {
+      padding: 3rem 2rem;
+      text-align: center;
+      border-right: 1px solid rgba(23, 19, 16, 0.18);
+    }
+
+    .stat-item:last-child {
+      border-right: none;
+    }
+
+    .stat-number {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.8rem;
+      font-weight: 400;
+      color: var(--dark);
+      line-height: 1;
+      margin-bottom: 0.4rem;
+    }
+
+    .stat-label {
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(23, 19, 16, 0.6);
+    }
+
+    /* ===== SERVICES ===== */
+    #sluzby {
+      background: var(--cream);
+      padding: 8rem 3rem;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+
+    .section-eyebrow {
+      font-size: 0.62rem;
+      font-weight: 500;
+      letter-spacing: 0.42em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+
+    .section-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2.1rem, 3.8vw, 3.1rem);
+      font-weight: 400;
+      line-height: 1.2;
+      color: var(--text-dark);
+    }
+
+    .section-title em {
+      font-style: italic;
+      color: var(--brown);
+    }
+
+    .section-title.light {
+      color: var(--text-light);
+    }
+
+    .section-title.light em {
+      color: var(--gold-light);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .service-card {
+      background: #fff;
+      padding: 3rem 2.5rem;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .service-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 3px;
+      background: var(--gold);
+      transition: width 0.45s ease;
+    }
+
+    .service-card:hover::after {
+      width: 100%;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-icon {
+      width: 46px;
+      height: 46px;
+      margin-bottom: 1.6rem;
+      color: var(--gold);
+    }
+
+    .service-name {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.55rem;
+      font-weight: 500;
+      color: var(--text-dark);
+      margin-bottom: 0.8rem;
+    }
+
+    .service-desc {
+      font-size: 0.86rem;
+      font-weight: 300;
+      line-height: 1.85;
+      color: var(--text-muted);
+    }
+
+    /* ===== PRODUCTS ===== */
+    #produkty {
+      background: var(--dark);
+      padding: 8rem 3rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .products-bg-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: 'DM Serif Display', serif;
+      font-size: 19vw;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.025);
+      white-space: nowrap;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .products-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 1150px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      align-items: center;
+    }
+
+    .products-list {
+      list-style: none;
+      margin-top: 2.2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+    }
+
+    .products-list li {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: rgba(245, 240, 232, 0.72);
+      padding-bottom: 0.9rem;
+      border-bottom: 1px solid rgba(200, 148, 74, 0.1);
+    }
+
+    .stagger-item {
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.45s ease, transform 0.45s ease;
+    }
+
+    .stagger-item.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .products-list li::before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--gold);
+      flex-shrink: 0;
+    }
+
+    .products-image-stack {
+      position: relative;
+      height: 520px;
+    }
+
+    .products-img-main {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 87%;
+      height: 430px;
+      object-fit: cover;
+    }
+
+    .products-img-accent {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 55%;
+      height: 270px;
+      object-fit: cover;
+      outline: 5px solid var(--dark);
+    }
+
+    /* ===== GALLERY ===== */
+    #galerie {
+      background: var(--cream-2);
+      padding: 8rem 0;
+    }
+
+    #galerie .section-header {
+      padding: 0 3rem;
+    }
+
+    .gallery-carousel {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+    }
+
+    .gallery-carousel::before,
+    .gallery-carousel::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 80px;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .gallery-carousel::before {
+      left: 0;
+      background: linear-gradient(to right, var(--cream-2), transparent);
+    }
+
+    .gallery-carousel::after {
+      right: 0;
+      background: linear-gradient(to left, var(--cream-2), transparent);
+    }
+
+    .gallery-track {
+      display: flex;
+      gap: 10px;
+      will-change: transform;
+      cursor: grab;
+      user-select: none;
+    }
+
+    .gallery-track.dragging {
+      cursor: grabbing;
+    }
+
+    .gallery-item {
+      flex: 0 0 clamp(340px, 40vw, 560px);
+      height: clamp(440px, 54vw, 680px);
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.6s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.06);
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(23, 19, 16, 0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.35s;
+    }
+
+    .gallery-item:hover .gallery-overlay {
+      background: rgba(23, 19, 16, 0.22);
+    }
+
+    .gallery-zoom {
+      display: none;
+    }
+
+    /* ===== LIGHTBOX ===== */
+    #lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: rgba(14, 11, 9, 0.97);
+      align-items: center;
+      justify-content: center;
+    }
+
+    #lightbox.active {
+      display: flex;
+    }
+
+    #lightboxImg {
+      max-width: 88vw;
+      max-height: 88vh;
+      object-fit: contain;
+    }
+
+    .lb-close {
+      position: absolute;
+      top: 1.5rem;
+      right: 2rem;
+      background: none;
+      border: none;
+      color: var(--text-light);
+      font-size: 2rem;
+      cursor: pointer;
+      opacity: 0.6;
+      transition: opacity 0.2s;
+      line-height: 1;
+    }
+
+    .lb-close:hover {
+      opacity: 1;
+    }
+
+    .lb-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: 1px solid rgba(200, 148, 74, 0.35);
+      color: var(--gold);
+      width: 52px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .lb-nav:hover {
+      background: var(--gold);
+      color: var(--dark);
+    }
+
+    .lb-prev {
+      left: 2rem;
+    }
+
+    .lb-next {
+      right: 2rem;
+    }
+
+    .lb-counter {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      color: rgba(245, 240, 232, 0.45);
+    }
+
+    /* ===== CONTACT ===== */
+    #kontakt {
+      background: var(--dark-2);
+      padding: 8rem 3rem;
+      position: relative;
+    }
+
+    #kontakt::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--gold), transparent);
+    }
+
+    .contact-grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1.35fr;
+      gap: 7rem;
+      align-items: start;
+    }
+
+    .contact-info .section-eyebrow {
+      margin-bottom: 1.2rem;
+    }
+
+    .contact-info .section-title {
+      margin-bottom: 3rem;
+    }
+
+    .contact-detail {
+      margin-bottom: 2.2rem;
+    }
+
+    .contact-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-value {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: var(--text-light);
+      line-height: 1.65;
+    }
+
+    .contact-value a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .contact-value a:hover {
+      color: var(--gold);
+    }
+
+    .hours-table {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 0.35rem 1.6rem;
+      font-size: 0.85rem;
+      color: rgba(245, 240, 232, 0.55);
+    }
+
+    .hours-day {
+      color: rgba(245, 240, 232, 0.85);
+      font-weight: 500;
+    }
+
+    /* ===== FORM ===== */
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      background: rgba(245, 240, 232, 0.05);
+      border: 1px solid rgba(200, 148, 74, 0.2);
+      border-bottom: 1px solid rgba(200, 148, 74, 0.35);
+      padding: 1rem 1.2rem;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: var(--text-light);
+      outline: none;
+      transition: border-color 0.3s, background 0.3s;
+      resize: none;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: var(--gold);
+      background: rgba(200, 148, 74, 0.06);
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: rgba(245, 240, 232, 0.28);
+    }
+
+    .form-group textarea {
+      height: 145px;
+    }
+
+    .form-submit {
+      align-self: flex-start;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+      padding: 1.1rem 3rem;
+      background: var(--gold);
+      border: none;
+      color: var(--dark);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .form-submit:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+    }
+
+    .form-note {
+      font-size: 0.75rem;
+      font-weight: 300;
+      color: rgba(245, 240, 232, 0.3);
+      margin-top: -0.5rem;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #0d0b09;
+      padding: 3.5rem 3.5rem 2rem;
+      border-top: 1px solid rgba(200, 148, 74, 0.12);
+    }
+
+    .footer-copy {
+      font-size: 0.73rem;
+      font-weight: 300;
+      color: rgba(245, 240, 232, 0.3);
+      letter-spacing: 0.04em;
+    }
+
+    .footer-copy .sep {
+      color: var(--gold);
+      opacity: 0.6;
+      margin: 0 0.5rem;
+    }
+
+    /* ===== SCROLL PROGRESS BAR ===== */
+    #scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: linear-gradient(to right, var(--gold), var(--gold-light));
+      z-index: 9999;
+      transition: width 0.1s linear;
+    }
+
+    /* ===== BACK TO TOP ===== */
+    #back-to-top {
+      position: fixed;
+      bottom: 2.5rem;
+      right: 2.5rem;
+      width: 48px;
+      height: 48px;
+      background: var(--dark-2);
+      border: 1px solid rgba(191, 155, 92, 0.35);
+      color: var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 900;
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity 0.35s, transform 0.35s, background 0.3s, border-color 0.3s;
+      pointer-events: none;
+    }
+
+    #back-to-top.visible {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: all;
+    }
+
+    #back-to-top:hover {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: var(--dark);
+    }
+
+    /* ===== STAT COUNTER ===== */
+    .stat-number {
+      transition: transform 0.2s ease;
+    }
+
+    /* ===== MAP ===== */
+    #mapa {
+      background: var(--cream);
+      padding: 7rem 3rem;
+    }
+
+    .map-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .map-address {
+      margin-top: 0.9rem;
+      font-size: 0.82rem;
+      font-weight: 300;
+      color: var(--text-muted);
+      letter-spacing: 0.06em;
+    }
+
+    .map-container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .map-frame-wrap {
+      position: relative;
+      height: 320px;
+      overflow: hidden;
+      border: 1px solid rgba(191, 155, 92, 0.25);
+    }
+
+    .map-frame-wrap iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .map-pin-badge {
+      position: absolute;
+      bottom: 1.4rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--dark);
+      border: 1px solid rgba(191, 155, 92, 0.4);
+      color: var(--gold);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 0.65rem 1.4rem;
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      white-space: nowrap;
+      backdrop-filter: blur(8px);
+    }
+
+    @media (max-width: 640px) {
+      #mapa {
+        padding: 5rem 1.5rem;
+      }
+
+      .map-frame-wrap {
+        height: 240px;
+      }
+    }
+
+    /* ===== HERO GRAIN ===== */
+    .hero-grain {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      opacity: 0.06;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='512' height='512' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-size: 220px 220px;
+    }
+
+    /* ===== NUMBERED SERVICE CARDS ===== */
+    .service-number {
+      position: absolute;
+      top: 1rem;
+      right: 1.4rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 4.2rem;
+      font-weight: 400;
+      color: rgba(191, 155, 92, 0.09);
+      line-height: 1;
+      pointer-events: none;
+      transition: color 0.45s ease, transform 0.45s ease;
+    }
+
+    .service-card:hover .service-number {
+      color: rgba(191, 155, 92, 0.2);
+      transform: scale(1.06);
+    }
+
+    .service-tag {
+      display: inline-block;
+      font-size: 0.6rem;
+      font-weight: 600;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.4rem;
+      opacity: 0;
+      transform: translateY(6px);
+      transition: opacity 0.35s ease 0.05s, transform 0.35s ease 0.05s;
+    }
+
+    .service-card:hover .service-tag {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ===== MOTTO CHAR ANIMATION ===== */
+    .motto-char {
+      display: inline-block;
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.38s ease, transform 0.38s ease;
+    }
+
+    .motto-char.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ===== GALLERY CONTROLS ===== */
+    .gallery-controls {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2.8rem;
+      padding: 0 3rem;
+    }
+
+    .gallery-btn {
+      width: 52px;
+      height: 52px;
+      background: transparent;
+      border: 1px solid rgba(191, 155, 92, 0.35);
+      color: var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background 0.3s, border-color 0.3s, color 0.3s, transform 0.25s;
+    }
+
+    .gallery-btn:hover {
+      background: var(--gold);
+      color: var(--dark);
+      border-color: var(--gold);
+      transform: scale(1.06);
+    }
+
+    /* ===== MOBILE FLOATING CTA ===== */
+    .mobile-cta-bar {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 850;
+      background: var(--gold);
+      padding: 0.95rem 2rem;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: var(--dark);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      border-top: 1px solid rgba(23, 19, 16, 0.15);
+      transition: background 0.3s;
+    }
+
+    .mobile-cta-bar:hover {
+      background: var(--gold-light);
+    }
+
+    @media (max-width: 640px) {
+      .mobile-cta-bar {
+        display: flex;
+      }
+
+      body {
+        padding-bottom: 60px;
+      }
+    }
+
+    /* ===== FOOTER ENHANCED ===== */
+    .footer-inner {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 3rem;
+      padding-bottom: 2.5rem;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid rgba(200, 148, 74, 0.1);
+    }
+
+    .footer-brand-name {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.45rem;
+      color: var(--text-light);
+      letter-spacing: 0.04em;
+      margin-bottom: 0.3rem;
+    }
+
+    .footer-brand-sub {
+      font-size: 0.66rem;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.2rem;
+    }
+
+    .footer-brand-desc {
+      font-size: 0.8rem;
+      font-weight: 300;
+      line-height: 1.8;
+      color: rgba(245, 240, 232, 0.38);
+      max-width: 260px;
+    }
+
+    .footer-col-title {
+      font-size: 0.62rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.2rem;
+    }
+
+    .footer-col-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+
+    .footer-col-links a {
+      font-size: 0.82rem;
+      font-weight: 300;
+      color: rgba(245, 240, 232, 0.45);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-col-links a:hover {
+      color: var(--text-light);
+    }
+
+    .footer-col-links span {
+      font-size: 0.82rem;
+      font-weight: 300;
+      color: rgba(245, 240, 232, 0.45);
+    }
+
+    .footer-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+
+    @media (max-width: 900px) {
+      .footer-top {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .footer-top {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+
+    /* ===== ANIMATIONS ===== */
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(22px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1100px) {
+      .products-inner {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+      }
+
+      .products-image-stack {
+        height: 380px;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .gallery-grid {
+        columns: 3;
+      }
+
+      nav {
+        padding: 0 2rem;
+      }
+
+      .nav-phone {
+        display: none;
+      }
+    }
+
+    @media (max-width: 640px) {
+      nav {
+        padding: 0 1.5rem;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .nav-hamburger {
+        display: flex;
+      }
+
+      .mobile-menu {
+        display: flex;
+      }
+
+      .hero-content {
+        padding: 0 2rem;
+      }
+
+      .hero-title {
+        font-size: 2.8rem;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-grid {
+        columns: 2;
+      }
+
+      #stats {
+        grid-template-columns: 1fr;
+      }
+
+      .stat-item {
+        border-right: none;
+        border-bottom: 1px solid rgba(23, 19, 16, 0.18);
+      }
+
+      .stat-item:last-child {
+        border-bottom: none;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      #sluzby,
+      #produkty,
+      #galerie,
+      #kontakt,
+      #motto {
+        padding: 5rem 1.5rem;
+      }
+
+      footer {
+        padding: 1.8rem 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- SCROLL PROGRESS -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- BACK TO TOP -->
+  <button id="back-to-top" aria-label="Zpět nahoru">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+      <path d="M9 14V4M4 9L9 4L14 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </svg>
+  </button>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">
+      <span class="nav-logo-main">Podlahové centrum</span>
+      <span class="nav-logo-sub">Kadaň</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#sluzby">Služby</a></li>
+      <li><a href="#produkty">Produkty</a></li>
+      <li><a href="#galerie">Galerie</a></li>
+      <li><a href="#mapa">Mapa</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+    <a href="tel:+420728363267" class="nav-phone">+420 728 363 267</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Otevřít menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navigace">
+    <a href="#sluzby" class="mobile-link">Služby</a>
+    <a href="#produkty" class="mobile-link">Produkty</a>
+    <a href="#galerie" class="mobile-link">Galerie</a>
+    <a href="#mapa" class="mobile-link">Mapa</a>
+    <a href="#kontakt" class="mobile-link">Kontakt</a>
+    <a href="tel:+420728363267" class="mobile-link mobile-menu-phone">+420 728 363 267</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="hero-slide active" style="background-image: url('Obrazky/slider2.jpg')"></div>
+      <div class="hero-slide" style="background-image: url('Obrazky/slider3.jpg')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-grain" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Podlahové centrum Kadaň</p>
+      <h1 class="hero-title">
+        Podlahy,<br>
+        které <em>vydrží</em><br>
+        generace.
+      </h1>
+      <p class="hero-subtitle">
+        Profesionální poradenství, zaměření i pokládka.
+        Přes 1&nbsp;000 vzorků koberců a podlahových krytin
+        na více než 550&nbsp;m² prodejní plochy.
+      </p>
+      <div class="hero-ctas">
+        <a href="#kontakt" class="hero-cta-primary">
+          Poptat realizaci
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
+            <path d="M2.5 7.5H12.5M7.5 2.5L12.5 7.5L7.5 12.5" stroke="currentColor" stroke-width="1.5" />
+          </svg>
+        </a>
+        <a href="#galerie" class="hero-cta-secondary">Zobrazit galerii</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="hero-scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- MOTTO -->
+  <section id="motto">
+    <div class="motto-bg-word" aria-hidden="true">PODLAHY</div>
+    <p class="motto-eyebrow" data-aos="fade-up">Naše filozofie</p>
+    <blockquote class="motto-quote" id="mottoQuote">
+      "Poradíme, zaměříme, položíme.
+      Každá podlaha je pro nás projekt
+      s vlastní duší."
+    </blockquote>
+    <div class="motto-divider" data-aos="fade-up" data-aos-delay="200">
+      <div class="motto-divider-line"></div>
+      <div class="motto-divider-diamond"></div>
+      <div class="motto-divider-line"></div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div id="stats" aria-label="Fakta o nás">
+    <div class="stat-item" data-aos="fade-up" data-aos-delay="0">
+      <div class="stat-number">550+</div>
+      <div class="stat-label">m² prodejní plochy</div>
+    </div>
+    <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+      <div class="stat-number">1000+</div>
+      <div class="stat-label">vzorků koberců a PVC</div>
+    </div>
+    <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+      <div class="stat-number">30 km</div>
+      <div class="stat-label">rozvoz zdarma</div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="sluzby">
+    <div class="section-header" data-aos="fade-up">
+      <p class="section-eyebrow">Co pro vás děláme</p>
+      <h2 class="section-title">Komplexní péče<br>o vaši <em>podlahu</em></h2>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+        <span class="service-number" aria-hidden="true">01</span>
+        <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"
+          stroke-linecap="round">
+          <circle cx="24" cy="24" r="17" />
+          <path d="M24 14v12l7 4" />
+        </svg>
+        <span class="service-tag">Poradenství</span>
+        <h3 class="service-name">Poradenství</h3>
+        <p class="service-desc">Odborně poradíme s výběrem podlahové krytiny, vhodnou barvou, výběrem doplňků i ideální
+          údržbou. Bez spěchu, s přehledem.</p>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="80">
+        <span class="service-number" aria-hidden="true">02</span>
+        <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"
+          stroke-linecap="round">
+          <rect x="9" y="9" width="30" height="30" rx="1" />
+          <path d="M9 21h30M21 9v30" />
+        </svg>
+        <span class="service-tag">Měření</span>
+        <h3 class="service-name">Zaměření</h3>
+        <p class="service-desc">Přijedeme, zaměříme prostor a zpracujeme přesný výpočet spotřeby materiálu. Nic
+          nepodceníme, nic zbytečného.</p>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="160">
+        <span class="service-number" aria-hidden="true">03</span>
+        <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"
+          stroke-linecap="round">
+          <path d="M8 40h32M8 40V20l16-12 16 12v20" />
+          <rect x="19" y="28" width="10" height="12" />
+        </svg>
+        <span class="service-tag">Instalace</span>
+        <h3 class="service-name">Pokládka</h3>
+        <p class="service-desc">Profesionální instalace na námi předem upravený podklad včetně montáže přechodových lišt
+          a všech doplňků.</p>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+        <span class="service-number" aria-hidden="true">04</span>
+        <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"
+          stroke-linecap="round">
+          <path d="M24 8v32M12 24H8M40 24h-4M14 14l-3-3M37 11l-3 3M14 34l-3 3M37 37l-3-3" />
+          <circle cx="24" cy="24" r="8" />
+        </svg>
+        <span class="service-tag">Logistika</span>
+        <h3 class="service-name">Doprava zdarma</h3>
+        <p class="service-desc">Rozvoz materiálu i s pokládkou přímo na místo instalace. Zdarma po Kadani a do 30 km v
+          okolí.</p>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="80">
+        <span class="service-number" aria-hidden="true">05</span>
+        <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"
+          stroke-linecap="round">
+          <path d="M10 12h28v24H10z" />
+          <path d="M16 12v24M32 12v24M10 24h28" />
+        </svg>
+        <span class="service-tag">Úpravy</span>
+        <h3 class="service-name">Obšívání koberců</h3>
+        <p class="service-desc">Koberec po úpravě na požadovaný rozměr dokážeme obšít. Precizní dokončení pro perfektní
+          a trvalý výsledek.</p>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="160">
+        <span class="service-number" aria-hidden="true">06</span>
+        <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"
+          stroke-linecap="round">
+          <path d="M12 36V18l12-10 12 10v18" />
+          <path d="M18 36v-9h12v9" />
+          <path d="M8 36h32" />
+        </svg>
+        <span class="service-tag">Sklad</span>
+        <h3 class="service-name">Zboží skladem</h3>
+        <p class="service-desc">V našem obřím skladu naleznete veškerý sortiment ihned dostupný. Na více než 550 m² vás
+          čekají koberce, lina a další krytiny.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="produkty">
+    <div class="products-bg-text" aria-hidden="true">PODLAHY</div>
+    <div class="products-inner">
+      <div class="products-text">
+        <p class="section-eyebrow">Náš sortiment</p>
+        <h2 class="section-title light" data-aos="fade-up">
+          Vše, co vaše<br>
+          podlaha <em>potřebuje</em>
+        </h2>
+        <ul class="products-list stagger-list">
+          <li class="stagger-item">Koberce a PVC podlahy</li>
+          <li class="stagger-item">Vinylové a plovoucí podlahy</li>
+          <li class="stagger-item">Kusové koberce a běhouny</li>
+          <li class="stagger-item">Rohožky a vstupní systémy</li>
+          <li class="stagger-item">Přechodové a obvodové lišty</li>
+          <li class="stagger-item">Podložky pod podlahy</li>
+          <li class="stagger-item">Čisticí prostředky a doplňky</li>
+        </ul>
+      </div>
+      <div class="products-image-stack" data-aos="fade-left" data-aos-duration="1000">
+        <img class="products-img-main" src="Obrazky/foto2.jpg" alt="Výběr podlahových krytin v prodejně" loading="lazy">
+        <img class="products-img-accent" src="Obrazky/gal009.jpg" alt="Vzorky koberců" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="galerie">
+    <div class="section-header" data-aos="fade-up">
+      <h2 class="section-title"><em>Galerie</em></h2>
+    </div>
+    <div class="gallery-carousel">
+      <div class="gallery-track" id="galleryGrid">
+        <!-- filled by JS -->
+      </div>
+    </div>
+    <div class="gallery-controls">
+      <button class="gallery-btn" id="galleryPrev" aria-label="Předchozí foto">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M12 4L6 10L12 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+      <button class="gallery-btn" id="galleryNext" aria-label="Další foto">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M8 4L14 10L8 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section id="mapa" aria-label="Kde nás najdete">
+    <div class="map-header" data-aos="fade-up">
+      <p class="section-eyebrow">Kde nás najdete</p>
+      <h2 class="section-title"><em>Naše</em> prodejna</h2>
+      <p class="map-address">Topolová 1817, 432 01 Kadaň &nbsp;·&nbsp; Areál bývalých kasáren</p>
+    </div>
+    <div class="map-container">
+    <div class="map-frame-wrap" data-aos="fade-up" data-aos-delay="100">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2567.2!2d13.2688!3d50.3784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470936c8b4e4e3f1%3A0x1!2sTopolov%C3%A1%201817%2C%20432%2001%20Kada%C5%88!5e0!3m2!1scs!2scz!4v1"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Poloha prodejny Podlahové centrum Kadaň"></iframe>
+      <div class="map-pin-badge">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M8 1.5C5.515 1.5 3.5 3.515 3.5 6c0 3.5 4.5 8.5 4.5 8.5S12.5 9.5 12.5 6c0-2.485-2.015-4.5-4.5-4.5Zm0 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z" fill="currentColor"/>
+        </svg>
+        Podlahové centrum Kadaň
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="kontakt">
+    <div class="contact-grid">
+
+      <div class="contact-info" data-aos="fade-right">
+        <p class="section-eyebrow">Jsme tu pro vás</p>
+        <h2 class="section-title light">Napište nebo<br><em>zavolejte</em></h2>
+
+        <div class="contact-detail">
+          <p class="contact-label">Telefon</p>
+          <p class="contact-value"><a href="tel:+420728363267">+420 728 363 267</a></p>
+        </div>
+
+        <div class="contact-detail">
+          <p class="contact-label">E-mail</p>
+          <p class="contact-value"><a href="mailto:koberceb@seznam.cz">koberceb@seznam.cz</a></p>
+        </div>
+
+        <div class="contact-detail">
+          <p class="contact-label">Adresa</p>
+          <p class="contact-value">
+            Topolová 1817, 432 01 Kadaň<br>
+            <small style="font-size:0.8rem; opacity:0.55; font-family:'Montserrat',sans-serif; font-weight:300;">Areál
+              bývalých kasáren</small>
+          </p>
+        </div>
+
+        <div class="contact-detail">
+          <p class="contact-label">Otevírací doba</p>
+          <div class="hours-table">
+            <span class="hours-day">Po–Pá</span>
+            <span>9:00–12:30 &nbsp;|&nbsp; 13:30–17:00</span>
+            <span class="hours-day">Sobota</span>
+            <span>9:00–12:00</span>
+            <span class="hours-day">Neděle</span>
+            <span>Zavřeno</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" data-aos="fade-left" onsubmit="sendEmail(event)" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Vaše jméno" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" name="phone" placeholder="Telefon">
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="E-mailová adresa" required>
+        </div>
+        <div class="form-group">
+          <textarea name="message" placeholder="Váš dotaz nebo poptávka..." required></textarea>
+        </div>
+        <p class="form-note">Odpovíme vám co nejdříve, obvykle do 24 hodin.</p>
+        <button type="submit" class="form-submit">
+          Odeslat zprávu
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
+            <path d="M1.5 7.5L13.5 1.5L7.5 13.5L6.5 8.5L1.5 7.5Z" stroke="currentColor" stroke-width="1.5"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-brand-name">Podlahové centrum</div>
+          <div class="footer-brand-sub">Kadaň</div>
+          <p class="footer-brand-desc">Koberce, PVC, vinylové a plovoucí podlahy. Poradenství, zaměření a profesionální
+            pokládka od zkušeného týmu.</p>
+        </div>
+        <div>
+          <p class="footer-col-title">Navigace</p>
+          <div class="footer-col-links">
+            <a href="#sluzby">Služby</a>
+            <a href="#produkty">Produkty</a>
+            <a href="#galerie">Galerie</a>
+            <a href="#kontakt">Kontakt</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-col-title">Kontakt</p>
+          <div class="footer-col-links">
+            <a href="tel:+420728363267">+420 728 363 267</a>
+            <a href="mailto:koberceb@seznam.cz">koberceb@seznam.cz</a>
+            <span>Topolová 1817, Kadaň</span>
+            <span>Po–Pá 9:00–17:00</span>
+            <span>So 9:00–12:00</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; 2026 Podlahové centrum Kadaň
+          <span class="sep">·</span>
+          Areál bývalých kasáren
+        </p>
+        <p class="footer-copy" style="opacity:0.45;">
+          Topolová 1817, 432 01 Kadaň
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE FLOATING CTA -->
+  <a href="tel:+420728363267" class="mobile-cta-bar" aria-label="Zavolat nám">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+      <path
+        d="M16.5 12.75c0 .31-.068.613-.21.908a3.47 3.47 0 0 1-.578.862c-.472.517-1.005.748-1.567.75-.398 0-.825-.098-1.282-.298a12.74 12.74 0 0 1-1.283-.697 20.1 20.1 0 0 1-1.222-1.065A19.93 19.93 0 0 1 9.3 11.99a12.555 12.555 0 0 1-.69-1.275c-.195-.45-.293-.878-.293-1.282 0-.39.09-.765.27-1.103.18-.337.435-.645.765-.922.33-.278.682-.413 1.058-.413.15 0 .3.03.435.09.143.06.27.15.375.285l1.245 1.755c.105.143.18.277.232.405.053.12.083.24.083.352 0 .143-.038.285-.113.42a1.74 1.74 0 0 1-.307.397l-.42.435a.29.29 0 0 0-.083.21c0 .045.008.082.023.12.022.038.045.068.06.098.105.188.285.427.54.713.262.285.54.577.84.862.307.285.6.555.893.81.285.255.525.427.72.533.022.007.052.022.09.037a.35.35 0 0 0 .12.023.296.296 0 0 0 .218-.09l.42-.413c.135-.135.27-.24.398-.307a.79.79 0 0 1 .42-.112c.112 0 .232.022.36.075.127.052.262.127.405.232l1.777 1.26c.135.105.225.225.278.368.045.142.075.285.075.435Z"
+        stroke="currentColor" stroke-width="1.2" stroke-miterlimit="10" />
+    </svg>
+    Zavolat: +420 728 363 267
+  </a>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" role="dialog" aria-modal="true" aria-label="Galerie">
+    <button class="lb-close" onclick="closeLightbox()" aria-label="Zavřít">&#215;</button>
+    <button class="lb-nav lb-prev" onclick="lightboxNav(-1)" aria-label="Předchozí">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M12 4L6 10L12 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+      </svg>
+    </button>
+    <img id="lightboxImg" src="" alt="Realizace podlah">
+    <button class="lb-nav lb-next" onclick="lightboxNav(1)" aria-label="Další">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M8 4L14 10L8 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+      </svg>
+    </button>
+    <p class="lb-counter" id="lbCounter"></p>
+  </div>
+
+  <!-- AOS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    // Stagger list animation
+    const staggerList = document.querySelector('.stagger-list');
+    if (staggerList) {
+      const staggerObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const items = entry.target.querySelectorAll('.stagger-item');
+            items.forEach((item, i) => {
+              setTimeout(() => item.classList.add('visible'), i * 110);
+            });
+            staggerObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      staggerObserver.observe(staggerList);
+    }
+
+    AOS.init({ once: true, offset: 60, duration: 750 });
+
+    // Hero slideshow
+    (function () {
+      const slides = document.querySelectorAll('.hero-slide');
+      let idx = 0;
+      setInterval(() => {
+        slides[idx].classList.remove('active');
+        idx = (idx + 1) % slides.length;
+        const next = slides[idx];
+        next.style.animation = 'none';
+        next.offsetWidth; // force reflow so animation restarts
+        next.style.animation = '';
+        next.classList.add('active');
+      }, 6000);
+    })();
+
+    // Navbar ref (scroll handled in combined listener below)
+    const navbar = document.getElementById('navbar');
+
+    // Gallery build
+    const photos = [
+      'Obrazky/foto1.jpg', 'Obrazky/foto2.jpg', 'Obrazky/foto3.jpg',
+      'Obrazky/foto4.jpg', 'Obrazky/foto5.jpg', 'Obrazky/foto6.jpg',
+      'Obrazky/foto7.jpg', 'Obrazky/foto8.jpg', 'Obrazky/foto9.jpg',
+      'Obrazky/foto10.jpg', 'Obrazky/foto11.jpg', 'Obrazky/foto12.jpg',
+      'Obrazky/foto13.jpg', 'Obrazky/foto14.jpg',
+      'Obrazky/gal008.jpg', 'Obrazky/gal009.jpg', 'Obrazky/gal010.jpg'
+    ];
+
+    let currentIdx = 0;
+    const grid = document.getElementById('galleryGrid');
+
+    // ── Carousel state ──
+    let carPos = 0;
+    const carSpeed = 0.55;   // px per frame (~33px/s)
+    let carRunning = true;
+    let carSetWidth = 0;
+    let carResumeTimer = null;
+    let dragStartX = null;
+    let dragBasePos = 0;
+    let didDrag = false;
+
+    function buildCarouselItem(src, originalIdx) {
+      const item = document.createElement('div');
+      item.className = 'gallery-item';
+      item.innerHTML = `
+        <img src="${src}" alt="Realizace podlah ${originalIdx + 1}" loading="lazy">
+        <div class="gallery-overlay">
+          <div class="gallery-zoom">+</div>
+        </div>
+      `;
+      item.addEventListener('click', () => {
+        if (didDrag) { didDrag = false; return; }
+        openLightbox(originalIdx);
+      });
+      return item;
+    }
+
+    // Original set + duplicate for seamless infinite loop
+    photos.forEach((src, i) => grid.appendChild(buildCarouselItem(src, i)));
+    photos.forEach((src, i) => grid.appendChild(buildCarouselItem(src, i)));
+
+    // Block image drag
+    grid.querySelectorAll('img').forEach(img => img.addEventListener('dragstart', e => e.preventDefault()));
+
+    // ── RAF loop ──
+    function carLoop() {
+      if (carRunning && carSetWidth > 0) {
+        carPos -= carSpeed;
+        if (carPos <= -carSetWidth) carPos += carSetWidth;
+        grid.style.transform = `translateX(${carPos}px)`;
+      }
+      requestAnimationFrame(carLoop);
+    }
+
+    // ── Pointer / touch swipe ──
+    grid.addEventListener('pointerdown', (e) => {
+      if (e.button !== 0 && e.pointerType === 'mouse') return;
+      dragStartX = e.clientX;
+      dragBasePos = carPos;
+      didDrag = false;
+      carRunning = false;
+      clearTimeout(carResumeTimer);
+      grid.setPointerCapture(e.pointerId);
+      grid.classList.add('dragging');
+    });
+
+    grid.addEventListener('pointermove', (e) => {
+      if (dragStartX === null) return;
+      const delta = e.clientX - dragStartX;
+      if (Math.abs(delta) > 4) didDrag = true;
+      carPos = dragBasePos + delta;
+      // Keep within seamless bounds
+      if (carPos > 0) carPos -= carSetWidth;
+      if (carPos < -carSetWidth) carPos += carSetWidth;
+      grid.style.transform = `translateX(${carPos}px)`;
+    });
+
+    function endDrag() {
+      if (dragStartX === null) return;
+      dragStartX = null;
+      grid.classList.remove('dragging');
+      carResumeTimer = setTimeout(() => { carRunning = true; }, 500);
+    }
+
+    grid.addEventListener('pointerup', endDrag);
+    grid.addEventListener('pointercancel', endDrag);
+
+    // ── Start carousel after layout ──
+    window.addEventListener('load', () => {
+      carSetWidth = grid.scrollWidth / 2;
+      carLoop();
+    });
+
+    function openLightbox(idx) {
+      currentIdx = idx;
+      document.getElementById('lightboxImg').src = photos[idx];
+      document.getElementById('lbCounter').textContent = `${idx + 1} / ${photos.length}`;
+      document.getElementById('lightbox').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    function lightboxNav(dir) {
+      currentIdx = (currentIdx + dir + photos.length) % photos.length;
+      document.getElementById('lightboxImg').src = photos[currentIdx];
+      document.getElementById('lbCounter').textContent = `${currentIdx + 1} / ${photos.length}`;
+    }
+
+    document.getElementById('lightbox').addEventListener('click', function (e) {
+      if (e.target === this || e.target === document.getElementById('lightboxImg')) return;
+      if (e.target.closest('.lb-nav') || e.target.closest('.lb-close')) return;
+      closeLightbox();
+    });
+
+    document.addEventListener('keydown', e => {
+      if (!document.getElementById('lightbox').classList.contains('active')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') lightboxNav(-1);
+      if (e.key === 'ArrowRight') lightboxNav(1);
+    });
+
+    // ── Contact form -> mailto with button feedback ──
+    function sendEmail(e) {
+      e.preventDefault();
+      const f = e.target;
+      const btn = f.querySelector('.form-submit');
+
+      // visual feedback
+      btn.disabled = true;
+      btn.style.opacity = '0.65';
+      btn.innerHTML = 'Odesílám&hellip;';
+
+      const subject = encodeURIComponent(`Poptavka od ${f.name.value}`);
+      const body = encodeURIComponent(
+        `Jmeno: ${f.name.value}\nTelefon: ${f.phone.value}\nEmail: ${f.email.value}\n\nZprava:\n${f.message.value}`
+      );
+
+      setTimeout(() => {
+        window.location.href = `mailto:koberceb@seznam.cz?subject=${subject}&body=${body}`;
+        btn.disabled = false;
+        btn.style.opacity = '';
+        btn.innerHTML = `Odeslat zprávu <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M1.5 7.5L13.5 1.5L7.5 13.5L6.5 8.5L1.5 7.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>`;
+      }, 600);
+    }
+
+    // ── Scroll progress bar ──
+    const progressBar = document.getElementById('scroll-progress');
+    function updateProgress() {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      progressBar.style.width = (scrollTop / docHeight * 100) + '%';
+    }
+
+    // ── Back to top ──
+    const backToTop = document.getElementById('back-to-top');
+    backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    // ── Animated counters ──
+    const statNumbers = document.querySelectorAll('.stat-number');
+    let countersRan = false;
+
+    function animateCounters() {
+      if (countersRan) return;
+      const statsEl = document.getElementById('stats');
+      const rect = statsEl.getBoundingClientRect();
+      if (rect.top > window.innerHeight * 0.85) return;
+      countersRan = true;
+
+      statNumbers.forEach(el => {
+        const raw = el.textContent.trim(); // e.g. "550+", "1000+", "30 km"
+        const numMatch = raw.match(/[\d]+/);
+        if (!numMatch) return;
+        const target = parseInt(numMatch[0]);
+        const suffix = raw.replace(numMatch[0], '');
+        const duration = 1400;
+        const start = performance.now();
+
+        function step(now) {
+          const elapsed = now - start;
+          const progress = Math.min(elapsed / duration, 1);
+          // ease out cubic
+          const eased = 1 - Math.pow(1 - progress, 3);
+          el.textContent = Math.round(eased * target) + suffix;
+          if (progress < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+      });
+    }
+
+    // ── Hamburger menu ──
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileLinks = mobileMenu.querySelectorAll('.mobile-link');
+
+    function openMenu() {
+      hamburger.classList.add('open');
+      hamburger.setAttribute('aria-expanded', 'true');
+      mobileMenu.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      mobileMenu.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.contains('open') ? closeMenu() : openMenu();
+    });
+
+    mobileLinks.forEach(link => link.addEventListener('click', closeMenu));
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && mobileMenu.classList.contains('open')) closeMenu();
+    });
+
+    // ── Motto char-by-char reveal ──
+    (function () {
+      const mottoEl = document.getElementById('mottoQuote');
+      if (!mottoEl) return;
+      const rawText = mottoEl.textContent;
+      mottoEl.innerHTML = rawText.split('').map(ch => {
+        if (ch === ' ') return ' ';
+        if (ch === '\n') return '<br>';
+        return `<span class="motto-char">${ch}</span>`;
+      }).join('');
+
+      const chars = mottoEl.querySelectorAll('.motto-char');
+      let revealed = false;
+
+      const mottoObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && !revealed) {
+            revealed = true;
+            chars.forEach((ch, i) => {
+              setTimeout(() => ch.classList.add('revealed'), i * 18);
+            });
+            mottoObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.4 });
+
+      mottoObserver.observe(mottoEl);
+    })();
+
+    // ── Gallery arrow controls ──
+    (function () {
+      const STEP = 420; // px per button click
+      document.getElementById('galleryPrev').addEventListener('click', () => {
+        carRunning = false;
+        clearTimeout(carResumeTimer);
+        carPos += STEP;
+        if (carPos > 0) carPos -= carSetWidth;
+        grid.style.transform = `translateX(${carPos}px)`;
+        carResumeTimer = setTimeout(() => { carRunning = true; }, 1800);
+      });
+      document.getElementById('galleryNext').addEventListener('click', () => {
+        carRunning = false;
+        clearTimeout(carResumeTimer);
+        carPos -= STEP;
+        if (carPos < -carSetWidth) carPos += carSetWidth;
+        grid.style.transform = `translateX(${carPos}px)`;
+        carResumeTimer = setTimeout(() => { carRunning = true; }, 1800);
+      });
+    })();
+
+    // ── Combined scroll handler ──
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+      backToTop.classList.toggle('visible', window.scrollY > 500);
+      updateProgress();
+      animateCounters();
+    }, { passive: true });
+
+    updateProgress();
+    animateCounters();
+  </script>
+
+</body>
+
+</html>
