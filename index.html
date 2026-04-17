@@ -1350,6 +1350,10 @@
         display: flex;
       }
 
+      #back-to-top {
+        display: none !important;
+      }
+
       body {
         padding-bottom: 60px;
       }
@@ -1527,6 +1531,11 @@
 
       .gallery-grid {
         columns: 2;
+      }
+
+      .gallery-carousel::before,
+      .gallery-carousel::after {
+        display: none;
       }
 
       #stats {
@@ -1823,19 +1832,20 @@
       <p class="map-address">Topolová 1817, 432 01 Kadaň &nbsp;·&nbsp; Areál bývalých kasáren</p>
     </div>
     <div class="map-container">
-    <div class="map-frame-wrap" data-aos="fade-up" data-aos-delay="100">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2567.2!2d13.2688!3d50.3784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470936c8b4e4e3f1%3A0x1!2sTopolov%C3%A1%201817%2C%20432%2001%20Kada%C5%88!5e0!3m2!1scs!2scz!4v1"
-        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        title="Poloha prodejny Podlahové centrum Kadaň"></iframe>
-      <div class="map-pin-badge">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-          <path d="M8 1.5C5.515 1.5 3.5 3.515 3.5 6c0 3.5 4.5 8.5 4.5 8.5S12.5 9.5 12.5 6c0-2.485-2.015-4.5-4.5-4.5Zm0 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z" fill="currentColor"/>
-        </svg>
-        Podlahové centrum Kadaň
+      <div class="map-frame-wrap" data-aos="fade-up" data-aos-delay="100">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2567.2!2d13.2688!3d50.3784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470936c8b4e4e3f1%3A0x1!2sTopolov%C3%A1%201817%2C%20432%2001%20Kada%C5%88!5e0!3m2!1scs!2scz!4v1"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" title="Poloha prodejny Podlahové centrum Kadaň"></iframe>
+        <div class="map-pin-badge">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path
+              d="M8 1.5C5.515 1.5 3.5 3.515 3.5 6c0 3.5 4.5 8.5 4.5 8.5S12.5 9.5 12.5 6c0-2.485-2.015-4.5-4.5-4.5Zm0 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z"
+              fill="currentColor" />
+          </svg>
+          Podlahové centrum Kadaň
+        </div>
       </div>
-    </div>
     </div>
   </section>
 
